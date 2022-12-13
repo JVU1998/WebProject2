@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <title>Fifteen Puzzle Game</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+</head>
+
+<body>
+    <h1>Fifteen Puzzle</h1>
+    <p id="p1">
+        The goal of the fifteen puzzle is to un-jumble its fifteen squares by repeatedly making moves that slide squares into the empty space.  
+        How quickly can you solve it?
+    </p>
+    <form>
+        Choose your image:
+        <select id="dropdown">
+            <option value="url('assets/ayaka.png')">Ayaka</option> 
+            <option value="url('assets/klee.png')">Klee</option>
+            <option value="url('assets/layla.png')">Layla</option>
+            <option value="url('assets/nahida.png')">Nahida</option>
+            <option value="url('assets/raiden.png')">Raiden</option>
+        </select>
+    </form> <br>
+
+    <div id="main-of-page">
+        <div id="puzzlearea">  
+                <div>1</div>  
+                <div>2</div>  
+                <div>3</div>  
+                <div>4</div>
+                <div>5</div>  
+                <div>6</div>  
+                <div>7</div>  
+                <div>8</div>
+                <div>9</div>  
+                <div>10</div> 
+                <div>11</div> 
+                <div>12</div>
+                <div>13</div> 
+                <div>14</div> 
+                <div>15</div>
+        </div>
+
+        <div id="controls">
+            <button id="shufflebutton"> Shuffle </button>
+        </div>
+        <div id="win" style="display: none;">
+            <canvas id="canvas">
+                Canvas is not supported in your browser.
+            </canvas>
+        </div>
+    </div>
+                
+    <p id="p2">
+        American puzzle author and mathematician Sam Loyd is often falsely credited with creating the puzzle; indeed, Loyd claimed from 1891 until his death in 1911 that he invented it.  The puzzle was actually created around 1874 by Noyes Palmer Chapman, a postmaster in Canastota, New York.
+    </p>
+    <a href="summary.html">Summary of this Project</a>
+    <!-- <div id="w3c">
+        <a href="https://validator.w3.org/"><img class="w3c" src="assets/html.png" alt="Valid XHTML 1.1" /></a>
+        <a href="https://jigsaw.w3.org/css-validator/"><img class="w3c" src="assets/css.png" alt="Valid CSS" /></a>
+        <a href="http://www.cs.washington.edu/education/courses/cse190m/08sp/jslint.html"><img src="assets/js.png" alt="JavaScript Lint" /></a>
+    </div> -->
+    <script type="text/javascript" src="fifteen.js"></script>
+</body>
+</html>
