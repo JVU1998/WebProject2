@@ -3,6 +3,7 @@ body {
     font-size: 12pt;
     font-family: 'Times New Roman', Times, serif;
     color: #000000;
+    margin: 0 10%;
 }
 
 #controls, #main-of-page, #puzzlearea {
@@ -42,7 +43,6 @@ h1 {
 }
 
 .puzzlepiece {
-    background-image: url(assets/1.png);
     border: 2px solid black;
     height: 100px;
     line-height: 96px;

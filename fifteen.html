@@ -47,12 +47,19 @@
         </div>
 
         <div id="controls">
-            <button id="shufflebutton"> Shuffle </button>
+            <button id="shufflebutton"> Shuffle </button><br>
+            <div id="restart" style="display: none;">
+                <button id="restartBtn">Restart</button>
+            </div>
         </div>
         <div id="win" style="display: none;">
             <canvas id="canvas">
                 Canvas is not supported in your browser.
             </canvas>
+        </div>
+        <div id="gameStats">
+            Number of moves: <span id='movesCount'>0</span><br>
+            Timer: <label id='minutes'>00</label>:<label id='seconds'>00</label><br>
         </div>
     </div>
                 
